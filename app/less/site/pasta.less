@@ -1,0 +1,44 @@
+@import 'variables';
+
+.pasta-block {
+	background: @subtitle-color;
+	text-align: center;
+	position:relative;
+	padding-top: 120px;
+	padding-bottom: 110px;
+
+	&__btn {
+		background: #7dc855;
+		border:2px solid #7dc855;
+		color: #fff;
+		font-weight: 300;
+		padding: 22px 40px ;
+	}
+
+	.main-title {
+		color:#fff;
+		margin-top: 0;
+	}
+
+	.subtitle {
+		color: #e5e6e8;
+		margin-bottom: 42px;
+	}
+
+	&__labels {
+		display: flex;
+		-webkit-justify-content: space-between; /* Safari */
+ 		justify-content: space-between;
+		-webkit-flex-wrap: wrap; /* Safari */
+		flex-wrap: wrap;
+		img {
+			width: auto;
+			height: inherit;
+		}
+	}
+	&__nota {
+		font-size: 18px;
+		padding-top: 80px;
+		margin-bottom: 42px;
+	}
+}

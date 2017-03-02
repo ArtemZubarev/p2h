@@ -1,0 +1,49 @@
+@import 'variables';
+
+.banner {
+  text-align: center;
+  padding-top: 170px;
+  &__main-title {
+    font-size: 52px;
+    font-weight: 300;
+    color: @title-color;
+    text-transform: capitalize;
+    span {
+      text-transform: lowercase;
+      color: @title-color;
+    }
+  }
+  &__subtitle {
+    font-size: 22px;
+    font-weight: 100;
+    color: @subtitle-color;
+    
+  }
+  &__container {
+    text-align: center;
+    margin-top: 80px;
+  }
+  &__options {
+    margin-top: 95px;
+  }
+  &__item {
+    display: inline-block;
+    width: 33.3%;
+    float: left;
+  }
+  &__icon {
+    float: left;
+  }
+  &__text {
+    padding-left: 80px;
+    text-align: left;
+    span {
+      color: @title-color;
+      font-size: 18px;
+    }
+    p {
+      color: @subtitle-color;
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,124 @@
+.pricing-block {
+  text-align: center;
+  position: relative;
+  padding-top: 90px;
+}
+.pricing-block__backg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: calc(100% - 130px);
+  background: #f9f9f9;
+  z-index: -1;
+}
+.pricing-block__help {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 130px;
+  background: #5e6977;
+  z-index: -1;
+}
+.price-container {
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  z-index: 2;
+  text-align: center;
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  margin-top: 80px;
+}
+.price-container__item {
+  padding: 30px;
+  transition: 0.2s;
+  background: #fff;
+}
+.price-container__item .name,
+.price-container__item .description,
+.price-container__item .price,
+.price-container__item .annot,
+.price-container__item .period,
+.price-container__item .start-btn,
+.price-container__item .advantages-list > li {
+  transition: 0.2s;
+  cursor: default;
+}
+.price-container__item hr {
+  background: #e1e8ee;
+  border: none;
+  height: 1px;
+  transition: 0.3s;
+  margin: 26px 0;
+}
+.price-container__item .name {
+  color: #358ed7;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.price-container__item .description {
+  font-size: 16px;
+}
+.price-container__item .price {
+  margin-top: 0;
+  font-size: 52px;
+  font-weight: 300;
+  color: #43484d;
+}
+.price-container__item .period {
+  font-size: 14px;
+}
+.price-container__item .annot {
+  font-size: 16px;
+}
+.price-container__item .advantages-list {
+  text-align: left;
+}
+.price-container__item .advantages-list li {
+  line-height: 40px;
+  list-style: none;
+  color: #bfc7ce;
+  font-size: 14px;
+}
+.price-container__item .advantages-list li.active {
+  list-style-image: url(../../img/check.png);
+  color: #5e6977;
+}
+.price-container__item .start-btn {
+  border: 2px solid #e1e8ee;
+  color: #358ed7;
+  background: none;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.price-container__item--hovered {
+  background: #358ed7;
+}
+.price-container__item--hovered hr {
+  background: #61bdda;
+}
+.price-container__item--hovered .name,
+.price-container__item--hovered .description,
+.price-container__item--hovered .price,
+.price-container__item--hovered .annot,
+.price-container__item--hovered .period,
+.price-container__item--hovered .advantages-list > li,
+.price-container__item--hovered .advantages-list > li.active {
+  color: #fff;
+  opacity: 0.8;
+}
+.price-container__item--hovered .price {
+  opacity: 1;
+}
+.price-container__item--hovered .start-btn {
+  color: #fff;
+  background: #7dc855;
+  border: 2px solid #7dc855;
+}

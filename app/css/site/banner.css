@@ -1,0 +1,46 @@
+.banner {
+  text-align: center;
+  padding-top: 170px;
+}
+.banner__main-title {
+  font-size: 52px;
+  font-weight: 300;
+  color: #43484d;
+  text-transform: capitalize;
+}
+.banner__main-title span {
+  text-transform: lowercase;
+  color: #43484d;
+}
+.banner__subtitle {
+  font-size: 22px;
+  font-weight: 100;
+  color: #5e6977;
+}
+.banner__container {
+  text-align: center;
+  margin-top: 80px;
+}
+.banner__options {
+  margin-top: 95px;
+}
+.banner__item {
+  display: inline-block;
+  width: 33.3%;
+  float: left;
+}
+.banner__icon {
+  float: left;
+}
+.banner__text {
+  padding-left: 80px;
+  text-align: left;
+}
+.banner__text span {
+  color: #43484d;
+  font-size: 18px;
+}
+.banner__text p {
+  color: #5e6977;
+  font-size: 16px;
+}

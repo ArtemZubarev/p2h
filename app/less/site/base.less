@@ -1,0 +1,125 @@
+@import 'variables';
+
+* {
+  font-family: 'Roboto', sans-serif;
+  color: #86939e;
+  -webkit-user-select: none!important;
+  -moz-user-select: none!important;
+  -ms-user-select: none!important;
+  -o-user-select: none!important;
+  user-select: none!important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  border: 2px solid #e1e8ee;
+  color: @blue-color;
+  background: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.header {
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(232,232,232,1);
+  -moz-box-shadow: 0px 1px 3px 0px rgba(232,232,232,1);
+  box-shadow: 0px 1px 3px 0px rgba(232,232,232,1);
+  position:fixed;
+    z-index:100;
+    background: #fff;
+    width: 100%; 
+  &__navbar {
+    ul {
+      margin: 34px 0;
+      padding-left: 0;
+    }
+    li {
+      list-style: none;
+      display: inline-block;
+      a {
+        line-height: 30px;
+        font-size: 16px;
+        padding: 35px 20px;
+      }
+    }
+  }
+
+  &--small {
+    height: 50px; 
+
+    .header__navbar {
+      ul {
+        margin-top: 10px;
+      }
+    }
+  }
+} 
+
+.footer {
+  background: @footer-color;
+  padding-top: 60px;
+
+  .footer-info {
+    width: 40%;
+    display: table-row;
+    float: left;
+
+    &__info {
+      display: table-cell;
+      vertical-align: middle;
+
+      span {
+        float: left;
+
+      }
+    }
+  }
+
+  .footer-nav {
+    width: 60%;
+    display: inline-block;
+    float: left;
+
+    ul {
+      display: inline-block;
+      list-style: none;
+      font-weight: 600;
+      color: #fff;
+
+      li {
+        font-weight: 400;
+        color: #86939e;
+        padding: 5px 0; 
+      }
+    }
+    .selectize-control.single {
+      background-color: @footer-color!important;
+      width: 115px;
+      display: inline-block;
+      float: right;
+      position: relative;
+
+      &:before {
+        width: 15px;
+        height: 15px;
+        background: url(../img/lang.png);
+        display: block;
+        position: absolute;
+      }
+      
+      .selectize-input {
+        background-color: @footer-color!important;
+        background-image:none;
+        border: none;
+        box-shadow: none;
+        font-size: 16px;
+      }
+    }
+  }
+  
+}

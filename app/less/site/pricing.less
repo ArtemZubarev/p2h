@@ -1,0 +1,119 @@
+@import 'variables';
+
+.pricing-block {
+  text-align: center;
+  position: relative;
+  padding-top: 90px;  
+    
+    &__backg {
+      position:absolute;
+      top: 0;
+      width: 100%;
+      height: calc(~"100% - 130px");
+      background: #f9f9f9;
+      z-index: -1;
+    }
+    &__help {
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      width: 100%;height: 130px;
+      background: @subtitle-color;
+      z-index: -1;
+    }
+}
+.price-container {
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  z-index:2;
+  text-align: center;
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.3);
+  box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.3);
+  margin-top: 80px;
+
+  &__item {
+    padding: 30px;
+    transition: 0.2s;
+    background: #fff;
+    .name, .description, .price, .annot, .period, .start-btn, .advantages-list > li {
+      transition: 0.2s;
+      cursor: default;
+    }
+    hr {
+      background: #e1e8ee;
+      border: none;
+      height: 1px;
+      transition: 0.3s;
+      margin: 26px 0;
+    }
+    .name {
+      color: @blue-color;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    .description {
+      font-size: 16px;
+    }
+    .price {
+      margin-top: 0;
+      font-size: 52px;
+      font-weight: 300;
+      color: #43484d;
+    }
+    .period {
+      font-size: 14px;
+    }
+    .annot {
+      font-size: 16px;
+    }
+    .advantages-list {
+      text-align: left;
+      li {
+        line-height: 40px;
+        list-style: none;
+        color: #bfc7ce;
+        font-size: 14px;
+      }
+      li.active {
+        list-style-image: url(../../img/check.png);
+        color: @subtitle-color;
+      }
+    }
+    .start-btn {
+      border: 2px solid #e1e8ee;
+      color: @blue-color;
+      background: none;
+      width: 100%;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 10px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    
+    &--hovered {
+      background: @blue-color;
+      
+      hr {
+        background: #61bdda;
+      }
+      .name, .description, .price, .annot, .period, .advantages-list > li, .advantages-list > li.active {
+        
+        color: #fff;
+        opacity: 0.8;
+       
+      }
+      .price {
+        opacity: 1;
+      }
+      .start-btn {
+        color: #fff;
+        background: #7dc855;
+        border: 2px solid #7dc855;
+      }
+    }
+  }
+}

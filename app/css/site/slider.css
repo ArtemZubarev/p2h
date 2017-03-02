@@ -1,0 +1,82 @@
+.slider-block {
+  margin-top: 200px;
+}
+.slider-block__img {
+  display: inline-block !important;
+}
+.slider-block__info {
+  float: right;
+  width: 50%;
+}
+.slider-block__info h3 {
+  font-size: 32px;
+  font-weight: 200;
+  color: #43484d;
+}
+.slider-block__info .short-info {
+  display: block;
+  width: 360px;
+}
+.slider-block__info .info-more {
+  position: relative;
+  color: #358ed7;
+  font-weight: 400;
+}
+.slider-block__info .info-more:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: -15px;
+  bottom: 3px;
+  width: 6px;
+  height: 11px;
+  background: url(/img/arr.png) no-repeat;
+}
+.slider-block .next-arrow {
+  position: absolute;
+  top: calc(36%);
+  right: 7%;
+  width: 16px;
+  height: 28px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.slider-block .next-arrow:hover {
+  opacity: 1;
+}
+.slider-block .slick-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 15%;
+}
+.slider-block .slick-dots li {
+  display: inline-block;
+  font-size: 0;
+  background: none;
+  border: none;
+  height: 7px;
+  width: 7px;
+  margin: 5px;
+  margin-top: 5px;
+}
+.slider-block .slick-dots li.slick-active {
+  background: #358ed7;
+  height: 14px;
+  width: 14px;
+  margin-top: 0;
+  border-radius: 50%;
+}
+.slider-block .slick-dots li.slick-active button {
+  background: none;
+  border-radius: 50%;
+}
+.slider-block .slick-dots li button {
+  padding: 0;
+  border-radius: 50%;
+  margin-top: 3px;
+  height: 7px;
+  width: 7px;
+  background: none;
+  border: none;
+  background: #e7e9ec;
+}
